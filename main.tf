@@ -80,7 +80,7 @@ resource "aws_route_table_association" "public_1" {
 }
 
 resource "aws_instance" "bastion" {
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "ami-0230bd60aa48260c6"
   instance_type = "t3.micro"
   subnet_id     = aws_subnet.public_1.id
 
