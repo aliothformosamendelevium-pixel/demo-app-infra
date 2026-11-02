@@ -69,7 +69,7 @@ resource "aws_db_instance" "app_db" {
   username                = "dbadmin"
   password                = "AppDatabase2026Secure!"
   db_subnet_group_name    = aws_db_subnet_group.app.name
-  publicly_accessible     = true
+  publicly_accessible     = false
   backup_retention_period = 0
   skip_final_snapshot     = true
 
