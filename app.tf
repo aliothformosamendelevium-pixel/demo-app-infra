@@ -33,7 +33,7 @@ resource "aws_security_group" "app_sg" {
 
 resource "aws_instance" "app" {
   ami                    = "ami-0c55b159cbfafe1f0"
-  instance_type          = "m6i.8xlarge"
+  instance_type          = "t3.medium"
   subnet_id              = aws_subnet.public_1.id
   vpc_security_group_ids = [aws_security_group.app_sg.id]
 
